@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <title>Пример веб-страницы</title>
+  <script type="text/javascript">
+    // скрипт "Скрыть-Показать"
+function look(type){
+param=document.getElementById(type);
+if(param.style.display == "none") param.style.display = "block";
+else param.style.display = "none"
+}
+</script> 
+
+</head>
+<body>
+  <div id="b1">
+    <h1>Добро пожаловать на пример веб-страницы!</h1>
+    <p>Вот некоторые примеры распространенных ошибок:</p>
+    <p>1. Используйте тег <strong>strong</strong> вместо <b>bold</b> для выделения текста.</p>
+    <p>2. Чтобы исправить, удалите <u>подчеркивание</u> и используйте теги <em>emph</em> или <i>italic</i> для курсива.</p>
+    <p>3. Чтобы избежать частого <i>перезагрузки</i>, используйте атрибут <code>target="_blank"</code> для ссылок, чтобы открывать их в новом окне <a href="https://ru.wikipedia.org" target="_blank">открыть в новом окне</a>.</p>
+    <p>4. <span class="error">Всегда убедитесь, что ваши <span class="highlight">вложенные</span> стилевые правила правильно оформлены.</span></p>
+    <img alt="изображение" src="pilt.jpg">
+    <p>5. Используйте <code>&lt;br&gt;</code> вместо пробелов для переноса текста на новую строку.</p>
+    <p>6. Обратите внимание на правильность орфографии и грамматики. Например, используйте "Вот некоторые примеры" вместо "Сейчас некоторые примеры".</p>    
+    <p>7. Не используйте <span class="success">окрашенный</span> текст. Вместо этого используйте стилевое правило <code>"color: green;"</code>.</p>
+    <p>8. Не используйте элемент <div class="container"> <span class="scrolling">marquee</span></div>. Он устарел и большинство веб-браузеров его больше не поддерживают.</p>
+  </div>
+  <a href="javascript:look('div1');" title="Открыть Пример">Открыть Пример</a>
+<div id="div1" style="display: none;"> Скрытый текст </div> 
+
+</body>
+</html>

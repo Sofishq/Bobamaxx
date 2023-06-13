@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Мой сайт</title>
+  <link rel="stylesheet" type="text/css" href="bobamax2.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="logo3.png" alt="Логотип">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="bobamax2.html">Meist</a></li>
+        <li><a href="bobamax3.html">Teenused</a></li>
+        <li><a href="page3.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div id="content1" class="content">
+      <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <br><br>
+        <video id="video1" width="420">
+          <source src="bobamax1.mp4" type="video/mp4">
+          <source src="mov_bbb.ogg" type="video/ogg">
+          Your browser does not support HTML video.
+        </video>
+      </div> 
+      
+      <script> 
+      var myVideo = document.getElementById("video1"); 
+      
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      
+      function makeBig() { 
+          myVideo.width = 560; 
+      } 
+      
+      function makeSmall() { 
+          myVideo.width = 320; 
+      } 
+      
+      function makeNormal() { 
+          myVideo.width = 420; 
+      } 
+      </script> 
+      
+      <p>Meie ettevõte spetsialiseerub värske ja kvaliteetse bobbli tee tootmisele ja müümisele. Pakume laia valikut maitseid, sealhulgas klassikalisi ja eksootilisi variante.
+        Meie kohvikutes saate nautida bobbli teed hubases õhkkonnas, proovida jooke täiendavaid magustoite ja suupisteid. Meie töötajad on alati valmis aitama joogi valikul ja jagama nõuandeid selle kasutamise kohta.
+        Me järgime ka sotsiaalse vastutuse ja ökoloogilise jätkusuutlikkuse põhimõtteid, kasutades ainult keskkonnasõbralikke ja jätkusuutlikke koostisosi ja tooteid ning toetades kohalikke tee tootjaid.
+    </p>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <p>Narva mnt.5, JÕHVI<br>Tallinna mnt.2, NARVA<br>Avatud E - P 11:00 - 20:00</p>
+    </div>
+  </footer>
+</body>
+</html>
+

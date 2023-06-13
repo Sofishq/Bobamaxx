@@ -1,0 +1,52 @@
+body {
+    background-color: #f00;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  #b1{
+    width: 600px
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .highlight {
+    color: blue;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .container {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .container::before {
+    content: '\00a0';
+  }
+  
+  .scrolling {
+    animation: marquee 10s linear infinite;
+    display: block;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to { 
+      transform: translateX(-100%);
+    }
+  }
